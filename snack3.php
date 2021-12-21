@@ -39,7 +39,7 @@ $arreykey=array_keys($post);
  for($x = 0 ; $x < count($arreykey); $x++){
         $date = $arreykey[$X];
         for($y=0;$y < count($date);$y++){
-            echo $arreykey."".$date;
+            echo $date["post1"];
         }
     }
  ?>
