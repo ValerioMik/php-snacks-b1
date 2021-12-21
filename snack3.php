@@ -18,7 +18,7 @@ Qui l'array di esempio: https://www.codepile.net/pile/R2K5d68z
  -->
 
  <?php
- $postData = [
+ $post = [
 
      '10/12/2021'=>[
 
@@ -33,13 +33,17 @@ Qui l'array di esempio: https://www.codepile.net/pile/R2K5d68z
         'post1'=> "ciao a marco"
     ],
 ];
- 
-$arreykey=array_keys($postData);
- for($x=0;$x<count($arreykey);$x++){
-        $date = $arreykey[$X];
-        echo "<h2>".$date."</h2>;
-    };
 
+$arreykey=array_keys($post);
+
+ for($x = 0 ; $x < count($arreykey); $x++){
+        $date = $arreykey[$X];
+        for($y=0;$y < count($date);$y++){
+            echo $arreykey."".$date;
+        }
+    }
  ?>
+
+
 </body>
 </html>
