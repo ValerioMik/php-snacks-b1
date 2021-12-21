@@ -10,9 +10,36 @@
     
 <!-- ## Snack 3
 
-Creare un array di array. Ogni array figlio avrà come chiave una data in questo formato: DD-MM-YYYY es 01-01-2007 e come valore un array di post associati a quella data. Stampare ogni data con i relativi post.
+1.Creare un array di array. 
+2.Ogni array figlio avrà come chiave una data in questo formato: DD-MM-YYYY es 01-01-2007 e come    valore un array di post associati a quella data.
+3.Stampare ogni data con i relativi post.
 
 Qui l'array di esempio: https://www.codepile.net/pile/R2K5d68z
  -->
+
+ <?php
+ $postData = [
+
+     '10/12/2021'=>[
+
+         'post1'=> "ciao a tutti"
+     ],
+     '10/15/2021'=>[
+
+        'post1'=> "ciao"
+    ],
+    '10/19/2021'=>[
+
+        'post1'=> "ciao a marco"
+    ],
+];
+ 
+$arreykey=array_keys($postData);
+ for($x=0;$x<count($arreykey);$x++){
+        $date = $arreykey[$X];
+        echo "<h2>".$date."</h2>;
+    };
+
+ ?>
 </body>
 </html>
